@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fon{
+    width: 100%;
+    height: 100vh;
+	background-color: blue;
+}
+.fon img{
+    width: 30%;
+	height: 300px;
+margin-left: 450px;
+margin-top: 300px;
+   
+}
+.daire{
+    width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 300px;
+	left: 565px;
+	opacity: 0;
+	
+}
+.bir{
+	animation: daire 4s ease-out infinite;
+}
+.iki{
+	animation: daire1 4s ease-out 0.5s infinite;
+}
+.uc{
+	animation: daire 4s ease-out 1s infinite;
+}
+.dord{
+	animation: daire1 4s ease-out 1.5s infinite;
+}
+
+@keyframes daire{
+	0%{
+		transform: translate(0,0) scale(0.25);
+		opacity: 0.25;
+	}
+	100%{
+		transform: translate(-20px,-200px) scale(1);
+		opacity: 0;
+	}
+}
+@keyframes daire1{
+	0%{
+		transform: translate(0px,0px) scale(0.25);
+		opacity: 0.25;
+	}
+	100%{
+		transform: translate(20px,-200px) scale(1);
+		opacity: 0;
+	}
+}
